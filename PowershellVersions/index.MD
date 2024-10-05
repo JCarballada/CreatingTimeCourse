@@ -88,17 +88,51 @@ Visual Studio Code is a powerful code editor that enhances the PowerShell script
 4. Search for “PowerShell” and install the [PowerShell Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell).
 5. Create a new `.ps1` file in Visual Studio Code to start scripting in PowerShell.
 
-## Exercise 4: Create and Use a Variable in PowerShell
+## Exercise 4: Start PowerShell, PowerShell 7, and Visual Studio Code
 
-Learn how to create and use variables in PowerShell.
+In this exercise, you'll practice launching different PowerShell environments and Visual Studio Code.
 
-1. Open any version of PowerShell.
-2. Type the following command:
+1. Start Windows PowerShell:
+   - Press Win + R, type `powershell`, and press Enter
+   - Or search for "PowerShell" in the Start menu
 
+2. Start PowerShell 7 (pwsh):
+   - Press Win + R, type `pwsh`, and press Enter
+   - Or search for "pwsh" in the Start menu
+
+3. Launch Visual Studio Code:
+   - Press Win + R, type `code`, and press Enter
+   - Or search for "Visual Studio Code" in the Start menu
+
+
+## Exercise 5: Clone the Course Repository
+
+In this final exercise, you'll create a folder for the course materials and clone the repository. If you don't have Git installed, we'll cover how to install it.
+
+1. Install Git (if not already installed):
+   - Open PowerShell and type `git --version`
+   - If Git is not recognized, you have two options:
+     a. Download and install Git from the [official Git website](https://git-scm.com/downloads)
+     b. Install Git through Visual Studio Code:
+        - Open VS Code
+        - Go to the Source Control view (Ctrl+Shift+G)
+        - Click on "Download Git" if prompted
+
+2. Create a folder for the course materials:
    ```powershell
-   $greeting = "Hello, PowerShell!"
+   mkdir PowerShell-Training
+   cd PowerShell-Training
    ```
 
-3. Now, type `$greeting` and press Enter to see the stored value.
+3. Clone the course repository:
+   ```powershell
+   git clone https://github.com/JCarballada/CreatingTimeCourse.git
+   ```
 
-   - **Explanation**: Variables in PowerShell are defined using the `$` sign, followed by the variable name.
+4. Open the cloned repository in Visual Studio Code:
+   ```powershell
+   code CreatingTimeCourse
+   ```
+
+
+

@@ -1,40 +1,61 @@
+# PowerShell Cmdlets 101: Diving into Cmdlets 
 
-# PowerShell Cmdlets 101: Get-Command and Friends
 
-## Introduction to Get-Command
+## Cmdlets: The Building Blocks of PowerShell
 
-The first amigo in our PowerShell journey is: `Get-Command`.
+Cmdlets are the fundamental building blocks of PowerShell. 
+As we mentioned in previos exercise. Building Bricks. 
+Let's see how we can use them.
 
-PowerShell cmdlets follow a consistent Verb-Noun syntax. This consistency makes it easier to:
-- Predict how a command you need might look
-- Transition between different PowerShell-supported products
-- Find cmdlets more intuitively than navigating through a GUI
+## Characteristics:
 
-## Exploring Get-Command
+### 1. **Verb-Noun Naming**: 
 
-Let's dive into `Get-Command`:
+Cmdlets follow a Verb-Noun naming convention (e.g., `Get-Service`, `Stop-Process`), making them intuitive and predictable.
+
+- PowerShell has a standardized list of approved verbs.
+- You can view this list using the `Get-Verb` cmdlet.
+- There are no synonyms in verb usage. For example, it's always "Stop", never "Terminate" or "End".
+- Verbs give you a clue about a cmdlet's action:
+  - `Get-` cmdlets retrieve information without modifying system settings.
+  - `Set-` cmdlets can change settings.
+
+This standardization helps you predict cmdlet names and understand their functions.
+
+
+### 2. **Parameters**: 
+Cmdlets accept parameters to modify their behavior or specify what information you want. For example:
 
 ```powershell
-Get-Command Get-Service
-
+# Get all services
 Get-Service
 
 # Get a specific service by name
 Get-Service -Name "WinRM"
+
 # Stop a specific service by name
 Stop-Service -Name "WinRM"
 
 # Change the startup type of a service
-
 Set-Service -Name "WinRM" -StartupType Automatic
-
 ```
 
 
-In reality, there's a small subset of PowerShell commands you'll need to learn thoroughly. 
+### 3. **Working Together**: 
+Cmdlets are designed to work together, allowing you to build complex operations from simple commands. 
+While we'll explore this in depth later, here's a glimpse:
+Pipelining is the process of passing the output of one cmdlet as the input to another cmdlet.
 
+```powershell
+Get-Service -Name "WinRM" | Stop-Service
+Get-Service -Name "WinRM" | Set-Service -StartupType Disabled
+```
 
+This command gets all services, filters for running ones, and selects specific properties to display.
 
+As you progress, we will learn how to combine these building blocks to create powerful scripts and automate complex tasks.
+
+> Note: The `*` wildcard can be used with some parameters to match multiple items. For instance, `"Win*"` matches all services that start with "Win".
 
 ## Exercise 1: Finding Firewall-related Cmdlets
 
@@ -44,7 +65,6 @@ Imagine we need to find something related to Firewalls. Let's use `Get-Command` 
 2. The second part might contain "Firewall" or "FW"
 3. It's likely a built-in Windows command
 
-Try to construct a `Get-Command` query to find this cmdlet.
 
 ## Exercise 2: Discovering the Show-Command Cmdlet
 
@@ -60,13 +80,3 @@ Try to find this cmdlet using `Get-Command`.
 
 - `Get-Command *` shows all commands, including non-native ones.
 - PowerShell's consistent syntax makes it easier to find commands for unfamiliar products that support PowerShell cmdlets.
-
-## Challenge
-
-Try to find a command which outputs firewall information. Use the techniques we've discussed to narrow down your search.
-
-Happy cmdlet hunting!
-````
-
-This README.md file provides a structured introduction to `Get-Command` and includes two exercises for your students to practice. It maintains the conversational tone of your original text while organizing the content into clear sections. The exercises are presented as challenges to encourage active learning and exploration.
-`````
