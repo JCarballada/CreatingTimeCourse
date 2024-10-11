@@ -40,14 +40,13 @@ Powershell.exe is installed by default on all Windows operating systems. So you 
 
 ## Exercise 2: Install PowerShell 7.x
 
-| Characteristic | Description |
-|----------------|-------------|
-| Framework      | Built on .NET Core (cross-platform) |
-| Executable     | Runs using the pwsh executable |
-| Availability   | Downloadable for Windows, macOS, and Linux |
-| Version        | Actively developed, with frequent updates |
-| Support        | Fully supported and maintained by Microsoft |
-
+| Characteristic | Description                                         |
+|----------------|-----------------------------------------------------|
+| Framework      | Built on .NET Core (cross-platform)                 |
+| Executable     | Runs using the pwsh executable                      |
+| Availability   | Downloadable for Windows, macOS, and Linux          |
+| Version        | Actively developed, with frequent updates           |
+| Support        | Fully supported and maintained by Microsoft         |
 
 Next, we’ll download and install PowerShell 7.x to use the latest cross-platform version.
 
