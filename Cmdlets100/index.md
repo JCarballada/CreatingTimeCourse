@@ -1,12 +1,12 @@
 # PowerShell Basics 100 - Introduction to Cmdlets and Modules
 
-Welcome to your first PowerShell exercise! This exercise is designed to help you get comfortable with using basic PowerShell commands. By the end, you'll have a better understanding of what cmdlets and modules are, and you'll get a chance to share your observations.
+Welcome to your first PowerShell exercise! This exercise is designed to help you get comfortable with using basic PowerShell commands. 
+By the end, you'll have a better understanding of what cmdlets and modules are, and you'll get a chance to share your observations.
 
 ## Objective
 
 - Run two basic commands in PowerShell.
 - Get familiar with the `Get-Command` and `Get-Module` cmdlets.
-- Share your findings and discuss with your classmates or instructor.
 
 
 ## Task 1: Discovering Cmdlets
@@ -30,6 +30,7 @@ Welcome to your first PowerShell exercise! This exercise is designed to help you
 
 
 ## Task 2: Exploring Modules
+
 
 1. Run `Get-Module -ListAvailable`.
    - In the same PowerShell window, type the following and press Enter:

@@ -13,7 +13,7 @@ Welcome to the PowerShell Training course focused on Creating Time. This course 
 3. [Cmdlets 101](Cmdlets101/index.MD)
    - Advanced cmdlet usage and techniques.
 
-4. [Practice Exercises](PracticeExercises/UserParameters/README.MD)
+4. [Practice Exercises](PracticeExercises/UserParameters/index.MD)
    - Hands-on exercises to reinforce your learning.
 
 ## Getting Started
