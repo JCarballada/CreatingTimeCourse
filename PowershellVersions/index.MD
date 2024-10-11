@@ -40,7 +40,7 @@ Powershell.exe is installed by default on all Windows operating systems. So you 
 
 ## Exercise 2: Install PowerShell 7.x
 
- Characteristic | Description |
+| Characteristic | Description |
 |----------------|-------------|
 | Framework      | Built on .NET Core (cross-platform) |
 | Executable     | Runs using the pwsh executable |
