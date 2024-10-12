@@ -25,6 +25,9 @@ For example, in the command:
 Get-Process | Where-Object { $_.CPU -gt 10 } | Select-Object Name, CPU
 ```
 
+![Assembly Line Analogy](images/image.png)
+
+
 PowerShell does the following:
 1. Gets the first process
 2. Checks if its CPU usage is greater than 10
@@ -35,7 +38,6 @@ This happens for each process, one at a time, even though we see the results all
 
 ### Pipeline Variables: $_ and $PSItem
 
-![Assembly Line Analogy](image.png)
 
 
 In PowerShell pipelines, you often need to refer to the current object being processed. There are two special variables for this purpose: $_ and $PSItem. Both serve the same function and can be used interchangeably.
