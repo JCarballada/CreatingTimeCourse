@@ -20,6 +20,7 @@ Welcome to the PowerShell Training course focused on Creating Time. This course 
    - The PipeLine
 
 6. [The Pareto cmdlets](TheParetoCmdlets/index.md)
+   - How to use Select-Object, Where-Object and ForEach-Object
 
 
 
