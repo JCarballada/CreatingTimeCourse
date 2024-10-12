@@ -1,20 +1,21 @@
 # Understanding Get-Help in PowerShell
 
 
-Using the Get-Command we can find out the name of the cmdlet we want to get help on.
-With the Get-Help we can dig into more details for the cmdlet we are interested in.
+Get-Command + Get-Help. One to find the cmdlet, the second to find out how to use it.
 
+<p align="center">
+  <img src="./images/helpmeme.gif" alt="Get-Help in action">
+</p>
 
-`Get-Help` is a powerful cmdlet in PowerShell that provides comprehensive help and documentation for cmdlets, functions, scripts, and concepts. It's an essential tool for both beginners and experienced PowerShell users.
 
 
 ### Basic Usage
 
 To get help on any cmdlet, simply type `Get-Help` followed by the cmdlet name:
 
-powershell
+````powershell
 Get-Help Get-Process
-
+````
 ### Detailed Help
 
 This will display basic information about the `Get-Process` cmdlet.
@@ -29,16 +30,12 @@ Get-Help Get-Process -Detailed
 Get-Help Get-Process -Full
 ````
 
-- Online Help
-
-To view the most up-to-date help content in your web browser, use the `-Online` parameter:
+- Online Help: To view the most up-to-date help content in your web browser, use the `-Online` parameter:
 ```` powershell
 Get-Help Get-Process -Online
 ````
 
-- Examples
-
-To see examples of how to use a cmdlet, use the `-Examples` parameter:
+- Examples: To see examples of how to use a cmdlet, use the `-Examples` parameter:
 
 ```` powershell
 Get-Help Get-Process -Examples
@@ -46,11 +43,10 @@ Get-Help Get-Process -Examples
 
 ## Update Help
 
+The `Update-Help` cmdlet downloads the latest help content, including new cmdlets and updated information. It retrieves `.help.xml` files for all installed modules, ensuring you have the most current documentation.
 ```` powershell
 Update-Help
 ````
-
-The `Update-Help` cmdlet downloads the latest help content, including new cmdlets and updated information. It retrieves `.help.xml` files for all installed modules, ensuring you have the most current documentation.
 
 ## Understanding Parameters in Help
 

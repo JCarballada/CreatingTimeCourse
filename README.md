@@ -2,7 +2,7 @@
 
 Welcome to the PowerShell Training course focused on Creating Time. This course is designed to help you master PowerShell skills that will save you time and increase your productivity.
 
-## Course Modules
+## PART 1:  - Understanding the Shell -
 
 1. [PowerShell Versions](PowershellVersions/index.MD)
    - Learn about different PowerShell versions and how to set up your environment.
@@ -14,27 +14,19 @@ Welcome to the PowerShell Training course focused on Creating Time. This course 
    - Advanced cmdlet usage and techniques.
 
 4. [Get-Help](Get-Help/gethelp.md)
+   - Learn how to get help on PowerShell cmdlets.
 
-4. [PipeLines](PipeLiningAlias/pipeline.md)
-   - Advanced cmdlet usage and techniques.
+5. [PipeLines](PipeLiningAlias/pipeline.md)
+   - The PipeLine
 
-5. [Practice Exercises](PracticeExercises/UserParameters/index.MD)
+6. [The Pareto cmdlets](TheParetoCmdlets/index.md)
+
+
+
+7. [Practice Exercises](PracticeExercises/UserParameters/index.MD)
    - Hands-on exercises to reinforce your learning.
 
-## Getting Started
 
-To begin your journey in mastering PowerShell for time efficiency, start with the [PowerShell Versions](PowershellVersions/index.MD) module. This will ensure you have the right setup for the course.
+## PART 2: - Learning the Language -
 
-## Course Structure
 
-Each module contains:
-- Theoretical explanations
-- Practical examples
-- Exercises to reinforce learning
-
-## Prerequisites
-
-- Basic understanding of scripting concepts
-- A computer with PowerShell installed (Windows PowerShell 5.1 or PowerShell 7.x)
-
-Happy learning, and may PowerShell help you create more time in your day!
