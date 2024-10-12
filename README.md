@@ -13,6 +13,8 @@ Welcome to the PowerShell Training course focused on Creating Time. This course 
 3. [Cmdlets 101](Cmdlets101/index.MD)
    - Advanced cmdlet usage and techniques.
 
+4. [Get-Help](Get-Help/gethelp.md)
+
 4. [PipeLines](PipeLiningAlias/pipeline.md)
    - Advanced cmdlet usage and techniques.
 
