@@ -40,7 +40,7 @@ You can download it from a repository like the PowerShell Gallery.
 PowerShell looks for modules in specific paths. You can view these paths with:
 
    ```powershell
-   $env:PSModulePath -split ';'
+   $env:PSModulePath 
    ```
 
 Registered PowerShell repositories:
@@ -73,11 +73,6 @@ The `Get-Module` cmdlet is used to list the modules that are currently loaded in
 While autoloading often takes care of importing modules as needed, you can manually import a module using `Import-Module`:
 
 
-
-
-
-
-
 ### Finding and Installing PowerShell Modules
 
 1. Browse the PowerShell Gallery using the command:
@@ -94,6 +89,61 @@ While autoloading often takes care of importing modules as needed, you can manua
    ```powershell
    Import-Module ModuleName
    ```
+
+### Finding a Module: ImportExcel
+
+99% of the scripts is to retrieve some sources of data, process it and present it in a useful way.
+As a built in cmdlet, we have Export-CSV which is a good option to create a comma separated file which can be opened and processed.
+Excel is a very common format to present data.
+
+Let's explore a module: ImportExcel. 
+This module allows you to create Excel spreadsheets directly from PowerShell, without needing Excel installed.
+
+1. Find a module on the gallery:
+   ```powershell
+   Find-Module -tag "excel"
+   ```
+
+2. Find a module on the gallery and save it in the current folder:
+   Lets explore the ImportExcel module:
+   ```powershell
+   Save-Module -name ImportExcel -Path .
+   ```
+
+
+3. Explore the module and Import it:
+   ```powershell
+   Import-module -Module C:\MyCurrentFolder\Whereitis\ImportExcel
+   ```
+      We have saved the module in the current folder, so we can import it.
+      There is the $env:PSModulePath variable that it is the path where PowerShell will look for modules.
+      If module is on this path, we can import it using the Import-Module cmdlet.
+      Autoloading will load the module when needed, but we can use Import-Module to load it explicitly.
+
+4. Install the ImportExcel module:
+   ```powershell
+   Install-Module -Name ImportExcel -Scope CurrentUser -Force
+   ```
+   It will be installed in the $env:USERPROFILE\Documents\PowerShell\Modules folder.
+   if we change the scope to AllUsers, it will be installed in the $env:ProgramFiles\PowerShell\Modules folder.
+   Accessilbe to any user on the system
+
+
+5. Using the ImportExcel module to create an Excel file:
+       
+   ```powershell
+   Get-ChildItem . -file | select name,length -First 10  |  Export-Excel -Path .\FileTest.xlsx -WorksheetName "Files" -ChartType Pie -ExcelChartDefinition @{
+     YRange = 'Files!B2:B21'  
+     Title = '10 Files Size Chart'
+   } -Show 
+  ```
+
+This one-liner does the following:
+1. Creates an Excel file named 'FileList.xlsx' on your current folder
+2. We select a list of the first 10 files we found on the current directory 
+3. We export the data to Excel on a Sheet named Files and we add a chart of type Pie to show the size of each file.
+
+This example shows how you can quickly create multi-sheet Excel files using the ImportExcel module with minimal PowerShell code.
 
 ### Conclusion
 

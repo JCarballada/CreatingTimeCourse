@@ -80,3 +80,33 @@ Try to find this cmdlet using `Get-Command`.
 
 - `Get-Command *` shows all commands, including non-native ones.
 - PowerShell's consistent syntax makes it easier to find commands for unfamiliar products that support PowerShell cmdlets.
+
+
+
+## Exercise 2: Discovering the Show-Command Cmdlet
+Azure
+```powershell
+Get-AzADUser | selectc displayname,UserPrincipalName,@{n="CreatedTime";e={$_.ExtensionProperty.createdDateTime }} | export-csv –notypeinformation .\Report.csv
+```
+Active Directory
+```powershell
+Get-ADUser -filter * -Properties whenCreated | Select-Object Name,whenCreated | export-csv –notypeinformation .\report.csv
+```
+AWS
+```powershell
+Get-IAMUserList | select-Object username,createDate | export-csv –notypeinformation ReportUsers.csv
+```
+In PowerShell, the commands shown in the image demonstrate that, regardless of the system (whether it is Active Directory, Azure, or AWS), the approach is similar. These are the key common actions:
+
+This shows that once you understand the basic process in PowerShell, you can easily adapt the commands to work with different systems and services. The technology may change, but the core principles remain the same.
+
+While the systems (Azure AD, traditional AD, and AWS IAM) are different, the general flow is the same:
+
+- Retrieving Users: In all three cases, you are fetching a list of users. Whether using Get-azureaduser, Get-ADUser, or Get-IAMUserList, the first step is to gather the user data from the system.
+
+- Selecting Specific Properties: The next common action is selecting specific properties of the users that are relevant to your task. In the commands, you are selecting usernames, the time when the user was created, or other important fields, using Select-Object.
+
+- Exporting the Data: Once the data is gathered and formatted, the final step is exporting it, typically into a CSV file. This is done using export-csv in each of the commands.
+
+
+
