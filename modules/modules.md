@@ -119,7 +119,22 @@ While autoloading often takes care of importing modules as needed, you can manua
    Import-Module ModuleName
    ```
 
+### Exploring Module Commands
+
+To explore the commands available in modules, you can use a combination of `Get-Module` and `Get-Command`. Here's how:
+
+ For this example, let's use the `Microsoft.PowerShell.Management` module. To get all commands from the chosen module, use the `Get-Command` cmdlet with the `-Module` parameter:
+
+1. First, list available modules using `Get-Module`:
+
+```powershell
+Get-Module -ListAvailable 
+Get-Command -Module Microsoft.PowerShell.Management
+```
+
+
 ### Finding a Module: ImportExcel
+
 
 99% of the scripts is to retrieve some sources of data, process it and present it in a useful way.
 As a built in cmdlet, we have Export-CSV which is a good option to create a comma separated file which can be opened and processed.
@@ -180,3 +195,4 @@ Modules greatly extend PowerShell's capabilities, allowing you to tailor your en
 
 
 > While the PowerShell Gallery is a valuable resource, it's important to note that Microsoft doesn't verify all code uploaded to it. Always research a module's reputation and review its code before installing, especially in production environments.
+
