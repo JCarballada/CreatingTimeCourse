@@ -15,6 +15,9 @@ Cmdlets follow a Verb-Noun naming convention (e.g., `Get-Service`, `Stop-Process
 
 - PowerShell has a standardized list of approved verbs.
 - You can view this list using the `Get-Verb` cmdlet.
+```powershell
+Get-Verb
+```
 - There are no synonyms in verb usage. For example, it's always "Stop", never "Terminate" or "End".
 - Verbs give you a clue about a cmdlet's action:
   - `Get-` cmdlets retrieve information without modifying system settings.
@@ -83,7 +86,8 @@ Try to find this cmdlet using `Get-Command`.
 
 
 
-## Exercise 2: Discovering the Show-Command Cmdlet
+## Unified PowerShell Approach 
+
 Azure
 ```powershell
 Get-AzADUser | selectc displayname,UserPrincipalName,@{n="CreatedTime";e={$_.ExtensionProperty.createdDateTime }} | export-csv –notypeinformation .\Report.csv
