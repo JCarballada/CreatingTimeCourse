@@ -1,3 +1,8 @@
+---
+layout: default
+title: PowerShell Basics 100 - Introduction to Cmdlets and Modules
+---
+
 # PowerShell Basics 100 - Introduction to Cmdlets and Modules
 
 Welcome to your first PowerShell exercise! This exercise is designed to help you get comfortable with using basic PowerShell commands. 

@@ -1,8 +1,6 @@
-<div style="background-color: #012456; color: #FFFFFF; padding: 20px; font-family: Consolas, 'Courier New', monospace;">
-
 # CreatingTimeCourse
 
-<img src="Logo_PowershellCreatingTime.png" alt="PowerShell Creating Time Logo" width="200"/>
+![PowerShell Creating Time Logo](Logo_PowershellCreatingTime.png)
 
 # PowerShell Training: Creating Time
 
@@ -67,8 +65,4 @@ Happy PowerShelling!
 
 ---
 
-<p align="center">
-  <em>Empower your workflow. Master PowerShell. Create Time.</em>
-</p>
-
-</div>
+*Empower your workflow. Master PowerShell. Create Time.*
