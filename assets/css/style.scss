@@ -21,32 +21,52 @@
   font-size: 1.2em; // Adjust the h2 font size (subtitle)
 }
 
-// Override code block styling
+// Code block styling
 .highlight {
-  background-color: #012456; // PowerShell dark blue background
-  border-radius: 4px;
-  padding: 10px;
+  background-color: #001e36; // Dark blue background
+  border-radius: 0; // Remove rounded corners
+  padding: 16px;
   margin-bottom: 1rem;
 
   pre, code {
     background-color: transparent;
-    color: #ffffff; // Default white text color
+    color: #e0e0e0; // Light gray for default text
   }
 
-  .c  { color: #608B4E; } // Comments - softer green
-  .s  { color: #CE9178; } // Strings - light red
-  .nv { color: #9CDCFE; } // Variables - light blue
-  .nb { color: #569CD6; } // Built-in names - brighter blue
-  .k  { color: #569CD6; } // Keywords - brighter blue
-  .mi { color: #B5CEA8; } // Numbers - light green
-  .o  { color: #D4D4D4; } // Operators - light gray
-  .p  { color: #D4D4D4; } // Punctuation - light gray
+  // Syntax highlighting
+  .c  { color: #608B4E; } // Comments - green
+  .s  { color: #ce723b; } // Strings - orange
+  .nv { color: #569CD6; } // Variables - light blue
+  .nb { color: #569CD6; } // Built-in names - light blue
+  .k  { color: #569CD6; } // Keywords - light blue
+  .mi { color: #b5cea8; } // Numbers - light green
+  .o  { color: #e0e0e0; } // Operators - light gray (same as default)
+  .p  { color: #e0e0e0; } // Punctuation - light gray (same as default)
 }
 
-// Ensure inline code is also readable
+// Inline code styling
 code {
-  background-color: #012456;
-  color: #ffffff;
+  background-color: #001e36;
+  color: #e0e0e0;
   padding: 2px 4px;
-  border-radius: 3px;
+  border-radius: 0;
+}
+
+// Adjust other text colors
+body {
+  color: #333333; // Dark gray for main text
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c9f2c; // Green for headings
+}
+
+a {
+  color: #1e90ff; // Dodger blue for links
+}
+
+// Remove any box-shadow or other decorative elements
+.highlight, pre, code {
+  box-shadow: none;
+  border: none;
 }
