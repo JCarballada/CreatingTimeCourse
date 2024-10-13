@@ -21,29 +21,32 @@
   font-size: 1.2em; // Adjust the h2 font size (subtitle)
 }
 
-// Code block styling
+// Override code block styling
 .highlight {
   background-color: #012456; // PowerShell dark blue background
-  
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 1rem;
+
   pre, code {
+    background-color: transparent;
     color: #ffffff; // Default white text color
   }
 
-  // Syntax highlighting
-  .c  { color: #008800; } // Comments
-  .s  { color: #a31515; } // Strings
-  .nv { color: #eeedf0; } // Variables
-  .nb { color: #00bfff; } // Built-in names
-  .k  { color: #00bfff; } // Keywords
-  .mi { color: #ff0000; } // Numbers
-  .o  { color: #ffffff; } // Operators
-  .p  { color: #ffffff; } // Punctuation
+  .c  { color: #608B4E; } // Comments - softer green
+  .s  { color: #CE9178; } // Strings - light red
+  .nv { color: #9CDCFE; } // Variables - light blue
+  .nb { color: #569CD6; } // Built-in names - brighter blue
+  .k  { color: #569CD6; } // Keywords - brighter blue
+  .mi { color: #B5CEA8; } // Numbers - light green
+  .o  { color: #D4D4D4; } // Operators - light gray
+  .p  { color: #D4D4D4; } // Punctuation - light gray
 }
 
-/* Adjusting inline code styling */
+// Ensure inline code is also readable
 code {
-  background-color: #1e1e1e;
-  color: #dcdcdc;
-  padding: 0.2em 0.4em;
+  background-color: #012456;
+  color: #ffffff;
+  padding: 2px 4px;
   border-radius: 3px;
 }
