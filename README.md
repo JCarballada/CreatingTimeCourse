@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <p align="center">
   <img src="Logo_PowershellCreatingTime.png" alt="PowerShell Creating Time Logo" width="200"/>
 </p>
