@@ -1,4 +1,4 @@
-</style>
+
 <p align="center">
   <img src="Logo_PowershellCreatingTime.png" alt="PowerShell Creating Time Logo" width="150"/>
 </p>
