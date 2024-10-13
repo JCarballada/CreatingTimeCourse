@@ -1,0 +1,23 @@
+<div style="background-color: #001B44; color: #FFFFFF; padding: 25px; font-family: Consolas, 'Courier New', monospace; line-height: 1.5;">
+
+<style>
+h1, h2, h3, h4, h5, h6 { color: #FFFFFF; }
+a { color: #5BC0DE; }
+code { background-color: #0C0838; padding: 2px 4px; border-radius: 3px; color: #FFFFFF; }
+pre { 
+    background-color: #0C0838; 
+    padding: 10px; 
+    border-radius: 5px;
+    border-left: 4px solid #5BC0DE;
+    color: #FFFFFF;
+}
+blockquote { 
+    background-color: #0C0838;
+    border-left: 4px solid #5BC0DE; 
+    padding: 10px; 
+    color: #FFFFFF;
+    margin: 10px 0;
+    border-radius: 5px;
+}   
+</style>
+</div>
