@@ -3,7 +3,6 @@
 
 @import "{{ site.theme }}"; // Import the base Cayman theme styles
 
-// Change the general color to dark blue
 :root {
   --theme-color: #012456; // PowerShell dark blue background
 }
@@ -22,47 +21,23 @@
   font-size: 1.2em; // Adjust the h2 font size (subtitle)
 }
 
-/* Code block background and text colors */
-.highlight pre {
+// Code block styling
+.highlight {
   background-color: #012456; // PowerShell dark blue background
-  color: #ffffff; // White text color
-  padding: 15px;
-  border-radius: 5px;
-}
+  
+  pre, code {
+    color: #ffffff; // Default white text color
+  }
 
-/* Comment color */
-.highlight .c {
-  color: #006400; // Dark green comments
-}
-
-/* String color */
-.highlight .s, .highlight .s1 {
-  color: #a31515; // Dark red strings
-}
-
-/* Keyword and command color */
-.highlight .k, .highlight .kd {
-  color: #00bfff; // Deep sky blue for keywords and commands
-}
-
-/* Variable and parameter color */
-.highlight .nv, .highlight .p {
-  color: #eeedf0; // Light grayish for variables and parameters
-}
-
-/* Function and method color */
-.highlight .nf {
-  color: #ffff00; // Yellow functions
-}
-
-/* Numbers */
-.highlight .m {
-  color: #ff0000; // Red numbers
-}
-
-/* Operator colors */
-.highlight .o {
-  color: #ffffff; // White operators
+  // Syntax highlighting
+  .c  { color: #008800; } // Comments
+  .s  { color: #a31515; } // Strings
+  .nv { color: #eeedf0; } // Variables
+  .nb { color: #00bfff; } // Built-in names
+  .k  { color: #00bfff; } // Keywords
+  .mi { color: #ff0000; } // Numbers
+  .o  { color: #ffffff; } // Operators
+  .p  { color: #ffffff; } // Punctuation
 }
 
 /* Adjusting inline code styling */
