@@ -1,4 +1,3 @@
-<div style="background-color: #012456; color: #FFFFFF; padding: 20px; font-family: Consolas, 'Courier New', monospace;">
 
 # CreatingTimeCourse
 
