@@ -122,6 +122,43 @@ This pipeline:
 
 After running this, open LargeDownloads.html in your browser to see which large files are taking up space in your Downloads folder.
 
+## Basic Flow Control
+
+PowerShell provides several cmdlets for flow control, allowing you to manage the flow of your scripts.
+we will look at it in more detail later, but here is a quick overview with foreach and if statement.
+
+Conditional Logic with If in PowerShell
+In PowerShell, the if statement is used to control the flow of a script by executing code only when specific conditions are met. 
+It evaluates a condition, and if it's $true, the code inside the braces {} is executed. You can also use elseif and else to handle additional cases.
+
+Basic Syntax
+
+```powershell
+if (<condition>) {
+    <code to execute if condition is true>
+} elseif (<another condition>) {
+    <code to execute if this condition is true>
+} else {
+    <code to execute if none of the above conditions are true>
+}
+
+### ForEach-Object
+
+The `ForEach-Object` cmdlet is used to iterate over each item in a collection and execute a specified block of code for each item.
+
+```powershell
+Get-Process | ForEach-Object {
+    if ($_.WorkingSet -gt 104857600) {  # 100MB in bytes
+        Write-Host "$($_.Name) is using more than 100 MB of memory" -ForegroundColor Red
+    } elseif ($_.WorkingSet -gt 52428800) {  # 50MB in bytes
+        Write-Host "$($_.Name) is using between 50 and 100 MB of memory" -ForegroundColor Yellow
+    } else {
+        Write-Host "$($_.Name) is using less than 50 MB of memory" -ForegroundColor Green
+    }
+}
+```
+
+
 ## Aliases
 
 Aliases in PowerShell are shortcuts or alternate names for cmdlets. 

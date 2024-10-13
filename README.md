@@ -1,8 +1,23 @@
+<p align="center">
+  <img src="Logo_PowershellCreatingTime.png" alt="PowerShell Creating Time Logo" width="200"/>
+</p>
+
 # PowerShell Training: Creating Time
 
-Welcome to the PowerShell Training course focused on Creating Time. This course is designed to help you master PowerShell skills that will save you time and increase your productivity.
+Welcome to the PowerShell Training course focused on Creating Time. This comprehensive program is designed to help you master PowerShell skills that will save you time and increase your productivity in your daily tasks.
 
-## PART 1:  - Understanding the Shell -
+## Course Overview
+
+This course is divided into two main parts:
+
+1. Understanding the Shell
+2. Learning the Language
+
+Each section is carefully crafted to build your skills progressively, from basic concepts to advanced techniques.
+
+## PART 1: Understanding the Shell
+
+
 
 1. [PowerShell Versions](PowershellVersions/index.MD)
    - Learn about different PowerShell versions and how to set up your environment.
@@ -17,17 +32,43 @@ Welcome to the PowerShell Training course focused on Creating Time. This course 
    - Learn how to get help on PowerShell cmdlets.
 
 5. [PipeLines](PipeLiningAlias/pipeline.md)
-   - The PipeLine
+   - Master the powerful concept of pipelines in PowerShell.
 
-6. [The Pareto cmdlets](TheParetoCmdlets/paretocmdlets.md)
+6. [The Every Day Use cmdlets](TheParetoCmdlets/paretocmdlets.md)
    - How to use Select-Object, Where-Object and ForEach-Object
 
+7. [Calculated Properties](CalculatedProperties/calculatedProperties.md)
+   - How to use calculated properties to create custom properties on the fly.
 
+8. [Registry Provider](registryProvider/regproviders.md)
+   - Become a command line ninja with registry providers.
 
-7. [Practice Exercises](PracticeExercises/UserParameters/index.MD)
+9. [Practice Exercises](PracticeExercises/UserParameters/index.MD)
    - Hands-on exercises to reinforce your learning.
 
 
-## PART 2: - Learning the Language -
+## PART 2: Learning the Language
+
+6. [PowerShell Variables and Data Types](variableslogic101/variablelogic.md)
+   - Introduction to Variables
+   - Declaring and using variables
+   - Data types (strings, integers, arrays, booleans)
+
+... (more sections to be added) ...
 
 
+## Getting Started
+
+To begin your journey in mastering PowerShell and creating time, start with Part 1 and work your way through each section. Each module contains practical examples and exercises to help reinforce your learning.
+
+## Support
+
+If you have any questions or need assistance, please don't hesitate to reach out to our support team or use the issues section of this repository.
+
+Happy PowerShelling!
+
+---
+
+<p align="center">
+  <em>Empower your workflow. Master PowerShell. Create Time.</em>
+</p>

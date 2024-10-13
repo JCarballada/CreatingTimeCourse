@@ -76,6 +76,34 @@ To practice these concepts, try the following exercises:
 
 Remember, mastering these cmdlets will greatly enhance your ability to manipulate, analyze, and process data in PowerShell!
 
+# PowerShell Comparison Operators
+
+PowerShell provides various comparison operators that can be used in conditional statements, filtering, and object selection. Below is an explanation of some key operators and an example using `Select-Object`.
+
+### Common Comparison Operators:
+
+- **-eq**, **-ne**,**-gt**,**-ge**,**-lt**,**-le**: Equal, greater, less. 
+  ```powershell
+  # Example: -eq or -ne for equal or not equal
+  Get-Process | Select-Object Name, Id | Where-Object { $_.Id -eq 1000 }
+  ```
+ ```powershell
+  # Example: greater than, greater than or equal to
+  Get-Process |  Where-Object { $_.Id -gt 5000 }
+  ```
+  ```powershell
+  # Example: -lt for less than -le for less than or equal to
+  Get-Process |  Where-Object { $_.Id -lt 5000 }
+  ```
+- **-match**, **-notmatch**: Regular expression match
+  ```powershell
+  # Example: Matching process names that start with "S"
+  Get-Process |  Where-Object { $_.Name -match '^S' }
+  ```
+
+These operators are used extensively in PowerShell scripting to filter data or compare values when processing collections of objects.
+
+
 ## Advanced Filtering with Logical Operators
 
 When working with `Get-Process`, `Where-Object`, and `Select-Object`, you can use logical operators like `-and` and `-or` to create more complex filtering conditions. This allows for more precise and powerful data manipulation.
@@ -83,19 +111,14 @@ When working with `Get-Process`, `Where-Object`, and `Select-Object`, you can us
 ### Examples using AND and OR operators:
 
 ```powershell
-# Get processes that use more than 100MB of memory AND have been running for more than 1 hour
-Get-Process | Where-Object { $_.WorkingSet -gt 100MB -and $_.TotalProcessorTime.TotalHours -gt 1 } |
-    Select-Object Name, Id, WorkingSet, TotalProcessorTime
+# Get services that start with "W" AND are running
+Get-Service | Where-Object { $_.Name -like "W*" -and $_.Status -eq "Running" } |
+    Select-Object Name, Status, DisplayName
 
-# Get processes that are either system processes OR are using more than 500MB of memory
-Get-Process | Where-Object { $_.Company -eq "Microsoft Corporation" -or $_.WorkingSet -gt 500MB } |
-    Select-Object Name, Id, Company, WorkingSet
-
-# Combine multiple conditions with parentheses for more complex logic
-Get-Process | Where-Object { 
-    ($_.Name -like "s*" -and $_.WorkingSet -gt 50MB) -or 
-    ($_.Name -like "c*" -and $_.WorkingSet -gt 100MB) 
-} | Select-Object Name, Id, WorkingSet
+# Get services that are either stopped OR have "Windows" in their display name
+Get-Service | Where-Object { $_.Status -eq "Stopped" -or $_.DisplayName -like "*Windows*" } |
+    Select-Object Name, Status, DisplayName
 ```
+
 
 These examples demonstrate how to use `-and` and `-or` operators to create more sophisticated filters. You can combine multiple conditions to pinpoint exactly the processes you're interested in analyzing. By mastering these logical operators, you can create highly specific queries that allow you to extract precisely the information you need from your system.
