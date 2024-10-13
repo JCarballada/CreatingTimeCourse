@@ -5,7 +5,7 @@
 
 // Change the general color to dark blue
 :root {
-  --theme-color: #000080; // Dark blue color
+  --theme-color: #012456; // PowerShell dark blue background
 }
 
 // Reduce the header size to half
@@ -24,45 +24,45 @@
 
 /* Code block background and text colors */
 .highlight pre {
-  background-color: #1e1e1e; /* Dark background similar to PowerShell */
-  color: #dcdcdc; /* Default text color */
+  background-color: #012456; // PowerShell dark blue background
+  color: #ffffff; // White text color
   padding: 15px;
   border-radius: 5px;
 }
 
 /* Comment color */
 .highlight .c {
-  color: #6a9955; /* Green comments */
+  color: #006400; // Dark green comments
 }
 
 /* String color */
 .highlight .s, .highlight .s1 {
-  color: #ce9178; /* Light red strings */
+  color: #a31515; // Dark red strings
 }
 
 /* Keyword and command color */
 .highlight .k, .highlight .kd {
-  color: #569cd6; /* Blue for keywords and commands */
+  color: #00bfff; // Deep sky blue for keywords and commands
 }
 
 /* Variable and parameter color */
 .highlight .nv, .highlight .p {
-  color: #9cdcfe; /* Cyan for variables and parameters */
+  color: #eeedf0; // Light grayish for variables and parameters
 }
 
 /* Function and method color */
 .highlight .nf {
-  color: #dcdcaa; /* Yellowish functions */
+  color: #ffff00; // Yellow functions
 }
 
 /* Numbers */
 .highlight .m {
-  color: #b5cea8; /* Light green numbers */
+  color: #ff0000; // Red numbers
 }
 
 /* Operator colors */
 .highlight .o {
-  color: #d4d4d4; /* Light grey operators */
+  color: #ffffff; // White operators
 }
 
 /* Adjusting inline code styling */
