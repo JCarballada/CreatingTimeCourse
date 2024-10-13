@@ -5,3 +5,6 @@ plugins:
 title: "CreatingTimeCourse"
 description: "PowerShell Training: Creating Time Course"
 author: "Jacobo Carballada"
+assets:
+  css:
+    - /assets/css/style.scss

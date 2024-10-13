@@ -1,0 +1,23 @@
+---
+---
+
+@import "{{ site.theme }}"; // Import the base Cayman theme styles
+
+// Change the general color to dark blue
+:root {
+  --theme-color: #000080; // Dark blue color
+}
+
+// Reduce the header size to half
+.page-header {
+  font-size: 50%; // Reduce the header font size by half
+  padding: 20px 0; // Adjust the padding to control the height
+}
+
+.page-header h1 {
+  font-size: 2em; // Adjust the h1 font size (title)
+}
+
+.page-header h2 {
+  font-size: 1.2em; // Adjust the h2 font size (subtitle)
+}
