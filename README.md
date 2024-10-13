@@ -65,9 +65,3 @@ If you have any questions or need assistance, please don't hesitate to reach out
 Happy PowerShelling!
 
 ---
-
-<p align="center">
-  <em>Empower your workflow. Master PowerShell. Create Time.</em>
-</p>
-
-</div>
