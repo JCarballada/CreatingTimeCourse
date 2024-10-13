@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Logo_PowershellCreatingTime.png" alt="PowerShell Creating Time Logo" width="190"/>
+  <img src="Logo_PowershellCreatingTime.png" alt="PowerShell Creating Time Logo" width="200"/>
 </p>
 
 # PowerShell Training: Creating Time
@@ -16,8 +16,6 @@ This course is divided into two main parts:
 Each section is carefully crafted to build your skills progressively, from basic concepts to advanced techniques.
 
 ## PART 1: Understanding the Shell
-
-
 
 1. [PowerShell Versions](PowershellVersions/index.MD)
    - Learn about different PowerShell versions and how to set up your environment.
@@ -46,16 +44,14 @@ Each section is carefully crafted to build your skills progressively, from basic
 9. [Practice Exercises](PracticeExercises/UserParameters/index.MD)
    - Hands-on exercises to reinforce your learning.
 
-
 ## PART 2: Learning the Language
 
-6. [PowerShell Variables and Data Types](variableslogic101/variablelogic.md)
+1. [PowerShell Variables and Data Types](variableslogic101/variablelogic.md)
    - Introduction to Variables
    - Declaring and using variables
    - Data types (strings, integers, arrays, booleans)
 
 ... (more sections to be added) ...
-
 
 ## Getting Started
 
@@ -68,4 +64,3 @@ If you have any questions or need assistance, please don't hesitate to reach out
 Happy PowerShelling!
 
 ---
-
