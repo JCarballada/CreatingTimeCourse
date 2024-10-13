@@ -1,7 +1,4 @@
-
 # CreatingTimeCourse
-
-<img src="./images/Logo_PowershellCreatingTime.png" alt="PowerShell Creating Time Logo" width="200"/>
 
 # PowerShell Training: Creating Time
 
