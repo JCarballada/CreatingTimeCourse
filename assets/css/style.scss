@@ -27,21 +27,64 @@
   border-radius: 0; // Remove rounded corners
   padding: 16px;
   margin-bottom: 1rem;
-
   pre, code {
-    background-color: transparent;
-    color: #e0e0e0; // Light gray for default text
+    background: #1e1e1e !important; /* PowerShell-like dark background */
+    color: #d4d4d4 !important;      /* Light gray text color */
+    border: none !important;        /* Remove any borders or frames */
+    padding: 10px !important;       /* Add padding for better readability */
+    border-radius: 5px !important;  /* Rounded corners for a modern look */
+    font-family: Consolas, "Courier New", monospace; /* Use PowerShell-like monospace font */
   }
+  
+  /* For pre elements specifically */
+  pre {
+    white-space: pre-wrap; /* Allow text to wrap if too long */
+    word-wrap: break-word; /* Break words to prevent overflow */
+  }
+  
+  /* Inline code (inside `code` tags) */
+  code {
+    background: #2d2d2d !important; /* Slightly darker background for inline code */
+    padding: 2px 5px !important;    /* Padding for inline code */
+    border-radius: 3px !important;  /* Rounded corners */
+    font-size: 90%;                 /* Slightly smaller font for inline code */
+  }
+  
 
   // Syntax highlighting
-  .c  { color: #608B4E; } // Comments - green
-  .s  { color: #ce723b; } // Strings - orange
-  .nv { color: #569CD6; } // Variables - light blue
-  .nb { color: #569CD6; } // Built-in names - light blue
-  .k  { color: #569CD6; } // Keywords - light blue
-  .mi { color: #b5cea8; } // Numbers - light green
-  .o  { color: #e0e0e0; } // Operators - light gray (same as default)
-  .p  { color: #e0e0e0; } // Punctuation - light gray (same as default)
+  // Custom syntax highlighting for PowerShell
+  // Syntax highlighting
+  // Custom syntax highlighting for PowerShell 7.0
+  .highlight .nt { color: #d7ba7d; } /* New token or Type declarations */
+  .highlight .nb { color: #569cd6; } /* Built-in keywords (e.g., cmdlets, functions) */
+  .highlight .nv { color: #9cdcfe; } /* Variables ($variable) */
+  .highlight .s { color: #ce9178; }  /* Strings */
+  .highlight .k { color: #c586c0; }  /* Keywords (e.g., if, else, foreach) */
+  .highlight .mi { color: #b5cea8; } /* Numbers (integers, floats) */
+  .highlight .o { color: #d4d4d4; }  /* Operators (e.g., -eq, +, =, etc.) */
+  .highlight .p { color: #d4d4d4; }  /* Punctuation (commas, parentheses, braces) */
+  .highlight .c { color: #6a9955; }  /* Comments (single and multi-line) */
+  .highlight .err { color: #f44747; } /* Errors (syntax errors, etc.) */
+  .highlight .cm { color: #6a9955; } /* Multiline comments */
+  .highlight .cp { color: #6a9955; } /* Preprocessor comments (e.g., #requires) */
+  .highlight .c1 { color: #6a9955; } /* Single-line comments */
+  .highlight .cs { color: #6a9955; } /* Special comments */
+  .highlight .ge { font-style: italic; } /* Emphasis (italic) */
+  .highlight .gs { font-weight: bold; } /* Strong (bold) */
+  .highlight .kc { color: #569cd6; } /* Constant keywords (e.g., $true, $false) */
+  .highlight .kd { color: #569cd6; } /* Declaration keywords (e.g., function) */
+  .highlight .kn { color: #569cd6; } /* Namespace (e.g., System.Console) */
+  .highlight .kp { color: #569cd6; } /* Pseudo keywords (e.g., -match, -like) */
+  .highlight .kr { color: #569cd6; } /* Reserved keywords */
+  .highlight .kt { color: #4ec9b0; } /* Data types (e.g., int, string) */
+  .highlight .ld { color: #dcdcaa; } /* Date literals */
+  .highlight .m { color: #b5cea8; } /* Numbers */
+  .highlight .s { color: #ce9178; }  /* String literals */
+  .highlight .na { color: #9cdcfe; } /* Attribute names */
+  .highlight .nb { color: #569cd6; } /* Built-in commands (e.g., cmdlets) */
+  .highlight .nc { color: #4ec9b0; } /* Classes or object types */
+  
+
 }
 
 // Inline code styling
