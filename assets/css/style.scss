@@ -6,12 +6,18 @@
 :root {
   --theme-color: #000000; // Black background
   --powershell-blue: #012456; // PowerShell blue for headings
+  .k { color: #ff79c6; } /* Keywords */
+.s { color: #f1fa8c; } /* Strings */
+.c { color: #6272a4; } /* Comments */
+.nv { color: #8be9fd; } /* Variables */
+.m { color: #93f9ac; } /* Numbers */
 }
 
 // Reduce the header size to half
 .page-header {
   font-size: 50%; // Reduce the header font size by half
   padding: 20px 0; // Adjust the padding to control the height
+  color: var(--powershell-blue);
 }
 
 .page-header h1 {
