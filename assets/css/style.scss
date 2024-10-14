@@ -6,22 +6,20 @@
 :root {
   --theme-color: #000000; // Black background
   --powershell-blue: #012456; // PowerShell blue for headings
-  .k { color: #79ffc1; } /* Keywords */
+  .k { color: #ffffff; } /* Keywords */
 .s { color: #f1fa8c; } /* Strings */
 .c { color: #034612; } /* Comments */
-.nv { color: #0b462d; } /* Variables */
-.m { color: #0a4619; } /* Numbers */
-.o { color: #0a4619; } /* Operators */
-.p { color: #0a4619; } /* Punctuation */
-.n { color: #0a4619; } /* Names */
+.nv { color: #00ff95; } /* Variables */
+.m { color: #041f0b; } /* Numbers */
+.o { color: #ffffff; } /* Operators */
+.p { color: #00ff95; } /* Punctuation */
+.n { color: #00ff95; } /* Names */
 .t { color: #0a4619; } /* Tags */
-.i { color: #0a4619; } /* Integers */
+.i { color: #ffffff; } /* Integers */
 .h { color: #0a4619; } /* Hex */
 .r { color: #0a4619; } /* Regex */
-.e { color: #0a4619; } /* Errors */
-.g { color: #0a4619; } /* Grep */
-.x { color: #0a4619; } /* XML */
-.l { color: #0a4619; } /* Line Numbers */
+.e { color: #ff0000; } /* Errors */
+
 
 
 }
@@ -70,15 +68,20 @@
   }
 
   // Syntax highlighting
-  .nb { color: #FFFF00; } // Built-in commands (e.g., Get-Process) - Yellow
-  .nv { color: #00FF00; } // Variables ($variable) - Green
-  .s, .s1, .s2 { color: #ADD8E6; }  // Strings (quoted text) - Light Blue
-  .k { color: #FFFF00; }  // Keywords (e.g., if, else, foreach) - Yellow
-  .mi { color: #b5cea8; } // Numbers (integers, floats)
-  .o, .p { color: #d4d4d4; }  // Operators and Punctuation
-  .c { color: #6a9955; }  // Comments
-  .na { color: #FFD700; } // Named arguments (parameters) - Gold
-}
+  .k { color: #ffffff; } /* Keywords */
+.s { color: #f1fa8c; } /* Strings */
+.c { color: #034612; } /* Comments */
+.nv { color: #00ff95; } /* Variables */
+.m { color: #041f0b; } /* Numbers */
+.o { color: #ffffff; } /* Operators */
+.p { color: #00ff95; } /* Punctuation */
+.n { color: #00ff95; } /* Names */
+.t { color: #0a4619; } /* Tags */
+.i { color: #ffffff; } /* Integers */
+.h { color: #0a4619; } /* Hex */
+.r { color: #0a4619; } /* Regex */
+.e { color: #ff0000; } /* Errors */
+
 
 // Inline code styling
 code {
