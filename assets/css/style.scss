@@ -57,12 +57,12 @@
   // Syntax highlighting
   .n, .nb { color: #569CD6; } // Commands - Light Blue
   .nv { color: #9CDCFE; } // Variables - Lighter Blue
-  .s, .s1, .s2 { color: #CE9178; }  // Strings - Light Orange
+  .s, .s1, .s2 { color: #ffffff; }  // Strings - Light Orange
   .mi { color: #B5CEA8; } // Numbers - Light Green
   .o, .p { color: #D4D4D4; }  // Operators and Punctuation - Light Gray
   .c, .c1 { color: #6A9955; }  // Comments - Green
   .nt { color: #DCDCAA; } // Parameters - Light Yellow
-  .k { color: #C586C0; } // Keywords - Light Purple
+  .k { color: #ffffff; } // Keywords - Light Purple
 
   // Remove background from angle brackets
   .p { background: transparent !important; }
