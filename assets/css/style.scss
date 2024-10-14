@@ -68,20 +68,15 @@
   }
 
   // Syntax highlighting
-  .k { color: #ffffff; } /* Keywords */
-.s { color: #f1fa8c; } /* Strings */
-.c { color: #034612; } /* Comments */
-.nv { color: #00ff95; } /* Variables */
-.m { color: #041f0b; } /* Numbers */
-.o { color: #ffffff; } /* Operators */
-.p { color: #00ff95; } /* Punctuation */
-.n { color: #00ff95; } /* Names */
-.t { color: #0a4619; } /* Tags */
-.i { color: #ffffff; } /* Integers */
-.h { color: #0a4619; } /* Hex */
-.r { color: #0a4619; } /* Regex */
-.e { color: #ff0000; } /* Errors */
-
+  .n { color: #FFFF00; } // Commands (e.g., Get-Process) - Yellow
+  .nv { color: #00FF00; } // Variables ($variable) - Green
+  .s, .s1, .s2 { color: #ADD8E6; }  // Strings (quoted text) - Light Blue
+  .nb { color: #FFFF00; }  // Built-in commands - Yellow
+  .mi { color: #b5cea8; } // Numbers (integers, floats)
+  .o, .p { color: #ffffff; }  // Operators and Punctuation - White
+  .c, .c1 { color: #6a9955; }  // Comments
+  .nt { color: #FFD700; } // Parameters - Gold
+}
 
 // Inline code styling
 code {
