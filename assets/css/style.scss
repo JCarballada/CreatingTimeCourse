@@ -41,52 +41,39 @@
 
 // Code block styling
 .highlight {
-  background-color: #000000 !important; // Black background
-  border-radius: 0;
+  background-color: #1E1E1E !important; // Dark gray background
+  color: #D4D4D4 !important; // Light gray text for better contrast
+  border-radius: 5px;
   padding: 16px;
   margin-bottom: 1rem;
 
   pre, code {
-    background: #000000 !important; // Black background
-    color: #ffffff !important; // White text color
-    font-weight: bold !important; // Bold text
-    border: none !important;
-    padding: 10px !important;
-    border-radius: 5px !important;
+    background: transparent !important;
     font-family: Consolas, "Courier New", monospace;
-  }
-  
-  pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  
-  code {
-    padding: 2px 5px !important;
-    border-radius: 3px !important;
-    font-size: 90%;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   // Syntax highlighting
-  .n { color: #FFFF00; } // Commands (e.g., Get-Process) - Yellow
-  .nv { color: #00FF00; } // Variables ($variable) - Green
-  .s, .s1, .s2 { color: #eef4f7; }  // Strings (quoted text) - Light Blue
-  .nb { color: #FFFF00; }  // Built-in commands - Yellow
-  .mi { color: #b5cea8; } // Numbers (integers, floats)
-  .o, .p { color: #ffffff; }  // Operators and Punctuation - White
-  .c, .c1 { color: #6a9955; }  // Comments
-  .nt { color: #c2baba; } // Parameters - Gold
-  .e { color: #ff0000; } /* Errors */
-  .k { color: #ffffff; } /* Keywords */
+  .n, .nb { color: #569CD6; } // Commands - Light Blue
+  .nv { color: #9CDCFE; } // Variables - Lighter Blue
+  .s, .s1, .s2 { color: #CE9178; }  // Strings - Light Orange
+  .mi { color: #B5CEA8; } // Numbers - Light Green
+  .o, .p { color: #D4D4D4; }  // Operators and Punctuation - Light Gray
+  .c, .c1 { color: #6A9955; }  // Comments - Green
+  .nt { color: #DCDCAA; } // Parameters - Light Yellow
+  .k { color: #C586C0; } // Keywords - Light Purple
+
+  // Remove background from angle brackets
+  .p { background: transparent !important; }
 }
 
 // Inline code styling
 code {
-  background-color: #000000;
-  color: #ffffff;
-  font-weight: bold;
+  background-color: #1E1E1E;
+  color: #D4D4D4;
   padding: 2px 4px;
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 // Adjust other text colors
