@@ -4,8 +4,9 @@
 @import "{{ site.theme }}"; // Import the base Cayman theme styles
 
 :root {
-  --theme-color: #012456; // PowerShell dark blue background
+  --theme-color: #000000; // Black background
   --powershell-blue: #012456; // PowerShell blue for headings
+  --command-yellow: #FFFF00; // Yellow for commands
 }
 
 // Reduce the header size to half
@@ -24,12 +25,12 @@
 
 // Code block styling
 .highlight {
-  background-color: var(--powershell-blue) !important; // Always blue background
+  background-color: #000000 !important; // Black background
   border-radius: 0;
   padding: 16px;
   margin-bottom: 1rem;
   pre, code {
-    background: var(--powershell-blue) !important; // Always blue background
+    background: #000000 !important; // Black background
     color: #ffffff !important; // White text color
     font-weight: bold !important; // Bold text
     border: none !important;
@@ -44,21 +45,18 @@
   }
   
   code {
-    background: var(--powershell-blue) !important; // Always blue background for inline code
+    background: #000000 !important; // Black background for inline code
     padding: 2px 5px !important;
     border-radius: 3px !important;
     font-size: 90%;
   }
 
   // Syntax highlighting
-  // Custom syntax highlighting for PowerShell
-  // Syntax highlighting
-  // Custom syntax highlighting for PowerShell 7.0
   .highlight .nt { color: #d7ba7d; } /* New token or Type declarations */
-  .highlight .nb { color: #569cd6; } /* Built-in keywords (e.g., cmdlets, functions) */
+  .highlight .nb { color: var(--command-yellow); } /* Built-in keywords (e.g., cmdlets, functions) */
   .highlight .nv { color: #9cdcfe; } /* Variables ($variable) */
   .highlight .s { color: #ce9178; }  /* Strings */
-  .highlight .k { color: #c586c0; }  /* Keywords (e.g., if, else, foreach) */
+  .highlight .k { color: var(--command-yellow); }  /* Keywords (e.g., if, else, foreach) */
   .highlight .mi { color: #b5cea8; } /* Numbers (integers, floats) */
   .highlight .o { color: #d4d4d4; }  /* Operators (e.g., -eq, +, =, etc.) */
   .highlight .p { color: #d4d4d4; }  /* Punctuation (commas, parentheses, braces) */
@@ -88,7 +86,7 @@
 
 // Inline code styling
 code {
-  background-color: var(--powershell-blue);
+  background-color: #000000;
   color: #ffffff;
   font-weight: bold;
   padding: 2px 4px;
