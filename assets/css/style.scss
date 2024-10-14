@@ -6,11 +6,24 @@
 :root {
   --theme-color: #000000; // Black background
   --powershell-blue: #012456; // PowerShell blue for headings
-  .k { color: #ff79c6; } /* Keywords */
+  .k { color: #79ffc1; } /* Keywords */
 .s { color: #f1fa8c; } /* Strings */
-.c { color: #6272a4; } /* Comments */
-.nv { color: #8be9fd; } /* Variables */
-.m { color: #93f9ac; } /* Numbers */
+.c { color: #034612; } /* Comments */
+.nv { color: #0b462d; } /* Variables */
+.m { color: #0a4619; } /* Numbers */
+.o { color: #0a4619; } /* Operators */
+.p { color: #0a4619; } /* Punctuation */
+.n { color: #0a4619; } /* Names */
+.t { color: #0a4619; } /* Tags */
+.i { color: #0a4619; } /* Integers */
+.h { color: #0a4619; } /* Hex */
+.r { color: #0a4619; } /* Regex */
+.e { color: #0a4619; } /* Errors */
+.g { color: #0a4619; } /* Grep */
+.x { color: #0a4619; } /* XML */
+.l { color: #0a4619; } /* Line Numbers */
+
+
 }
 
 // Reduce the header size to half
@@ -26,6 +39,45 @@
 
 .page-header h2 {
   font-size: 1.2em; // Adjust the h2 font size (subtitle)
+}
+
+// Code block styling
+.highlight {
+  background-color: #000000 !important; // Black background
+  border-radius: 0;
+  padding: 16px;
+  margin-bottom: 1rem;
+
+  pre, code {
+    background: #000000 !important; // Black background
+    color: #ffffff !important; // White text color
+    font-weight: bold !important; // Bold text
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    font-family: Consolas, "Courier New", monospace;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  code {
+    padding: 2px 5px !important;
+    border-radius: 3px !important;
+    font-size: 90%;
+  }
+
+  // Syntax highlighting
+  .nb { color: #FFFF00; } // Built-in commands (e.g., Get-Process) - Yellow
+  .nv { color: #00FF00; } // Variables ($variable) - Green
+  .s, .s1, .s2 { color: #ADD8E6; }  // Strings (quoted text) - Light Blue
+  .k { color: #FFFF00; }  // Keywords (e.g., if, else, foreach) - Yellow
+  .mi { color: #b5cea8; } // Numbers (integers, floats)
+  .o, .p { color: #d4d4d4; }  // Operators and Punctuation
+  .c { color: #6a9955; }  // Comments
+  .na { color: #FFD700; } // Named arguments (parameters) - Gold
 }
 
 // Inline code styling
@@ -55,4 +107,10 @@ h2, h3 {
 
 a {
   color: #1e90ff; // Dodger blue for links
+}
+
+// Remove any box-shadow or other decorative elements
+.highlight, pre, code {
+  box-shadow: none;
+  border: none;
 }
