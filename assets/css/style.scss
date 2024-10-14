@@ -6,11 +6,22 @@
 :root {
   --theme-color: #000000; // Black background
   --powershell-blue: #012456; // PowerShell blue for headings
-  .k { color: #ff79c6; } /* Keywords */
-.s { color: #f1fa8c; } /* Strings */
-.c { color: #6272a4; } /* Comments */
-.nv { color: #8be9fd; } /* Variables */
-.m { color: #93f9ac; } /* Numbers */
+//   .k { color: #ffffff; } /* Keywords */
+// .s { color: #f1fa8c; } /* Strings */
+// .c { color: #034612; } /* Comments */
+// .nv { color: #00ff95; } /* Variables */
+// .m { color: #041f0b; } /* Numbers */
+// .o { color: #ffffff; } /* Operators */
+// .p { color: #00ff95; } /* Punctuation */
+// .n { color: #00ff95; } /* Names */
+// .t { color: #0a4619; } /* Tags */
+// .i { color: #ffffff; } /* Integers */
+// .h { color: #0a4619; } /* Hex */
+// .r { color: #0a4619; } /* Regex */
+// .e { color: #ff0000; } /* Errors */
+
+
+
 }
 
 // Reduce the header size to half
@@ -28,13 +39,41 @@
   font-size: 1.2em; // Adjust the h2 font size (subtitle)
 }
 
+// Code block styling
+.highlight {
+  background-color: #1E1E1E !important; // Dark gray background
+  color: #D4D4D4 !important; // Light gray text for better contrast
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 1rem;
+
+  pre, code {
+    background: transparent !important;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  // Syntax highlighting
+  .n, .nb { color: #569CD6; } // Commands - Light Blue
+  .nv { color: #9CDCFE; } // Variables - Lighter Blue
+  .s, .s1, .s2 { color: #ffffff; }  // Strings - Light Orange
+  .mi { color: #B5CEA8; } // Numbers - Light Green
+  .o, .p { color: #D4D4D4; }  // Operators and Punctuation - Light Gray
+  .c, .c1 { color: #6A9955; }  // Comments - Green
+  .nt { color: #DCDCAA; } // Parameters - Light Yellow
+  .k { color: #ffffff; } // Keywords - Light Purple
+
+  // Remove background from angle brackets
+  .p { background: transparent !important; }
+}
+
 // Inline code styling
 code {
-  background-color: #000000;
-  color: #ffffff;
-  font-weight: bold;
+  background-color: #1E1E1E;
+  color: #D4D4D4;
   padding: 2px 4px;
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 // Adjust other text colors
@@ -55,4 +94,10 @@ h2, h3 {
 
 a {
   color: #1e90ff; // Dodger blue for links
+}
+
+// Remove any box-shadow or other decorative elements
+.highlight, pre, code {
+  box-shadow: none;
+  border: none;
 }
