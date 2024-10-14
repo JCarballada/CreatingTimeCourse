@@ -54,7 +54,7 @@
   // Syntax highlighting
   .highlight .nt { color: #d7ba7d; } /* New token or Type declarations */
   .highlight .nb { color: var(--command-yellow); } /* Built-in keywords (e.g., cmdlets, functions) */
-  .highlight .nv { color: #9cdcfe; } /* Variables ($variable) */
+  .highlight .nv { color: #006125; } /* Variables ($variable) */
   .highlight .s { color: #ce9178; }  /* Strings */
   .highlight .k { color: var(--command-yellow); }  /* Keywords (e.g., if, else, foreach) */
   .highlight .mi { color: #b5cea8; } /* Numbers (integers, floats) */
@@ -69,14 +69,14 @@
   .highlight .ge { font-style: italic; } /* Emphasis (italic) */
   .highlight .gs { font-weight: bold; } /* Strong (bold) */
   .highlight .kc { color: #569cd6; } /* Constant keywords (e.g., $true, $false) */
-  .highlight .kd { color: #569cd6; } /* Declaration keywords (e.g., function) */
+  .highlight .kd { color: #ffffff; } /* Declaration keywords (e.g., function) */
   .highlight .kn { color: #569cd6; } /* Namespace (e.g., System.Console) */
   .highlight .kp { color: #569cd6; } /* Pseudo keywords (e.g., -match, -like) */
-  .highlight .kr { color: #569cd6; } /* Reserved keywords */
+  .highlight .kr { color: #ffffff; } /* Reserved keywords */
   .highlight .kt { color: #4ec9b0; } /* Data types (e.g., int, string) */
   .highlight .ld { color: #dcdcaa; } /* Date literals */
-  .highlight .m { color: #b5cea8; } /* Numbers */
-  .highlight .s { color: #ce9178; }  /* String literals */
+  .highlight .m { color: #cea8b4; } /* Numbers */
+  .highlight .s { color: #78acce; }  /* String literals */
   .highlight .na { color: #9cdcfe; } /* Attribute names */
   .highlight .nb { color: #569cd6; } /* Built-in commands (e.g., cmdlets) */
   .highlight .nc { color: #4ec9b0; } /* Classes or object types */
