@@ -7,6 +7,8 @@
   --theme-color: #000000; // Black background
   --powershell-blue: #012456; // PowerShell blue for headings
   --command-yellow: #FFFF00; // Yellow for commands
+  --variable-green: #00FF00; // Green for variables
+  --string-blue: #0000FF; // Blue for quoted text
 }
 
 // Reduce the header size to half
@@ -54,8 +56,10 @@
   // Syntax highlighting
   .highlight .nt { color: #d7ba7d; } /* New token or Type declarations */
   .highlight .nb { color: var(--command-yellow); } /* Built-in keywords (e.g., cmdlets, functions) */
-  .highlight .nv { color: #9cdcfe; } /* Variables ($variable) */
-  .highlight .s { color: #ce9178; }  /* Strings */
+  .highlight .nv { color: var(--variable-green); } /* Variables ($variable) */
+  .highlight .s { color: var(--string-blue); }  /* Strings */
+  .highlight .s1 { color: var(--string-blue); } /* Single-quoted strings */
+  .highlight .s2 { color: var(--string-blue); } /* Double-quoted strings */
   .highlight .k { color: var(--command-yellow); }  /* Keywords (e.g., if, else, foreach) */
   .highlight .mi { color: #b5cea8; } /* Numbers (integers, floats) */
   .highlight .o { color: #d4d4d4; }  /* Operators (e.g., -eq, +, =, etc.) */
