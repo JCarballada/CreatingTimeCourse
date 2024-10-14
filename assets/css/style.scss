@@ -58,8 +58,8 @@
   .highlight .s { color: #ce9178; }  /* Strings */
   .highlight .k { color: var(--command-yellow); }  /* Keywords (e.g., if, else, foreach) */
   .highlight .mi { color: #b5cea8; } /* Numbers (integers, floats) */
-  .highlight .o { color: #d4d4d4; }  /* Operators (e.g., -eq, +, =, etc.) */
-  .highlight .p { color: #d4d4d4; }  /* Punctuation (commas, parentheses, braces) */
+  .highlight .o { color: #ffffff; }  /* Operators (e.g., -eq, +, =, etc.) */
+  .highlight .p { color: #ffffff; }  /* Punctuation (commas, parentheses, braces) */
   .highlight .c { color: #6a9955; }  /* Comments (single and multi-line) */
   .highlight .err { color: #f44747; } /* Errors (syntax errors, etc.) */
   .highlight .cm { color: #6a9955; } /* Multiline comments */
@@ -76,10 +76,14 @@
   .highlight .kt { color: #4ec9b0; } /* Data types (e.g., int, string) */
   .highlight .ld { color: #dcdcaa; } /* Date literals */
   .highlight .m { color: #cea8b4; } /* Numbers */
-  .highlight .s { color: #78acce; }  /* String literals */
+  .highlight .s { color: #427ca3; }  /* String literals */
   .highlight .na { color: #9cdcfe; } /* Attribute names */
   .highlight .nb { color: #569cd6; } /* Built-in commands (e.g., cmdlets) */
   .highlight .nc { color: #4ec9b0; } /* Classes or object types */
+  .highlight .nv::before {
+    content: '$';
+    color: #4caf50 !important; /* Green color for $ */
+  }
   
 
 }
