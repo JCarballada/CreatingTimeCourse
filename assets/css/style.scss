@@ -5,6 +5,7 @@
 
 :root {
   --theme-color: #012456; // PowerShell dark blue background
+  --powershell-blue: #012456; // PowerShell blue for headings
 }
 
 // Reduce the header size to half
@@ -23,33 +24,31 @@
 
 // Code block styling
 .highlight {
-  background-color: #001e36; // Dark blue background
-  border-radius: 0; // Remove rounded corners
+  background-color: var(--powershell-blue) !important; // Always blue background
+  border-radius: 0;
   padding: 16px;
   margin-bottom: 1rem;
   pre, code {
-    background: #1e1e1e !important; /* PowerShell-like dark background */
-    color: #d4d4d4 !important;      /* Light gray text color */
-    border: none !important;        /* Remove any borders or frames */
-    padding: 10px !important;       /* Add padding for better readability */
-    border-radius: 5px !important;  /* Rounded corners for a modern look */
-    font-family: Consolas, "Courier New", monospace; /* Use PowerShell-like monospace font */
+    background: var(--powershell-blue) !important; // Always blue background
+    color: #ffffff !important; // White text color
+    font-weight: bold !important; // Bold text
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    font-family: Consolas, "Courier New", monospace;
   }
   
-  /* For pre elements specifically */
   pre {
-    white-space: pre-wrap; /* Allow text to wrap if too long */
-    word-wrap: break-word; /* Break words to prevent overflow */
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
   
-  /* Inline code (inside `code` tags) */
   code {
-    background: #2d2d2d !important; /* Slightly darker background for inline code */
-    padding: 2px 5px !important;    /* Padding for inline code */
-    border-radius: 3px !important;  /* Rounded corners */
-    font-size: 90%;                 /* Slightly smaller font for inline code */
+    background: var(--powershell-blue) !important; // Always blue background for inline code
+    padding: 2px 5px !important;
+    border-radius: 3px !important;
+    font-size: 90%;
   }
-  
 
   // Syntax highlighting
   // Custom syntax highlighting for PowerShell
@@ -89,8 +88,9 @@
 
 // Inline code styling
 code {
-  background-color: #001e36;
-  color: #e0e0e0;
+  background-color: var(--powershell-blue);
+  color: #ffffff;
+  font-weight: bold;
   padding: 2px 4px;
   border-radius: 0;
 }
@@ -101,7 +101,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #2c9f2c; // Green for headings
+  color: var(--powershell-blue); // PowerShell blue for all headings
+}
+
+// Special styling for Summary, Task, etc.
+h2, h3 {
+  &:contains("Summary"), &:contains("Task"), &:contains("Key Takeaways") {
+    color: var(--powershell-blue);
+  }
 }
 
 a {
